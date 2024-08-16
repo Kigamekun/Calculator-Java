@@ -16,23 +16,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        Button openLinkButton = findViewById(R.id.open_link_button);
-//        openLinkButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(getApplicationContext(),"Halo ",Toast.LENGTH_LONG).show();
-////                openLink("https://www.example.com");
-//            }
-//        });
-//
-//
-//        Button navigateButton = findViewById(R.id.navigate_button);
-//        navigateButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                navigateToSecondActivity();
-//            }
-//        });
+        Button openLinkButton = findViewById(R.id.open_link_button);
+        openLinkButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Halo ",Toast.LENGTH_LONG).show();
+//                openLink("https://www.example.com");
+            }
+        });
+
+
+        Button navigateButton = findViewById(R.id.navigate_button);
+        navigateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navigateToSecondActivity();
+            }
+        });
 
 
     }

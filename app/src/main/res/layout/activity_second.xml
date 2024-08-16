@@ -1,82 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
-
-    <!-- Bilangan Pertama -->
-    <EditText
-        android:id="@+id/etBilanganPertama"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Masukkan Bilangan Pertama"
-        android:inputType="numberDecimal" />
-
-    <!-- Bilangan Kedua -->
-    <EditText
-        android:id="@+id/etBilanganKedua"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Masukkan Bilangan Kedua"
-        android:inputType="numberDecimal"
-        android:layout_marginTop="16dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-
-        >
-
-
-        <!-- Tombol Hitung -->
-        <Button
-            android:layout_marginHorizontal="5px"
-            android:id="@+id/btnTambah"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tambah" />
-
-        <Button
-            android:layout_marginHorizontal="5px"
-
-            android:id="@+id/btnKurang"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kurang" />
-
-        <Button
-            android:layout_marginHorizontal="5px"
-
-            android:id="@+id/btnKali"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kali" />
-
-        <Button
-            android:layout_marginHorizontal="5px"
-
-            android:id="@+id/btnBagi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bagi" />
-    </LinearLayout>
-
-    <!-- Hasil -->
+    tools:context=".MainActivity">
     <TextView
-        android:id="@+id/tvHasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hasil: "
-        android:textSize="18sp"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/navigate_button"
-        android:layout_marginTop="50dp"
-        android:layout_width="match_parent"
+        android:text=""
+        android:textSize="40sp"
+        android:textColor="@color/lavender"
+        android:padding="10dp"
+        android:layout_gravity="end"
+        android:id="@+id/input"/>
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kembali" />
+        android:text=""
+        android:textSize="60sp"
+        android:textColor="@color/lavender"
+        android:padding="10dp"
+        android:layout_gravity="end"
+        android:id="@+id/output"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/white"
+        android:gravity="bottom">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/buttons_layout"/>
+    </RelativeLayout>
 </LinearLayout>
