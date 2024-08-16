@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Bilangan Pertama -->
+    <EditText
+        android:id="@+id/etBilanganPertama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Bilangan Pertama"
+        android:inputType="numberDecimal" />
+
+    <!-- Bilangan Kedua -->
+    <EditText
+        android:id="@+id/etBilanganKedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Bilangan Kedua"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        >
+
+
+        <!-- Tombol Hitung -->
+        <Button
+            android:layout_marginHorizontal="5px"
+            android:id="@+id/btnTambah"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah" />
+
+        <Button
+            android:layout_marginHorizontal="5px"
+
+            android:id="@+id/btnKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kurang" />
+
+        <Button
+            android:layout_marginHorizontal="5px"
+
+            android:id="@+id/btnKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kali" />
+
+        <Button
+            android:layout_marginHorizontal="5px"
+
+            android:id="@+id/btnBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bagi" />
+    </LinearLayout>
+
+    <!-- Hasil -->
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil: "
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/navigate_button"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kembali" />
+</LinearLayout>
